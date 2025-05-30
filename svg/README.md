@@ -1,1 +1,1 @@
-В этой папке будут храниться все необходимые SVG-файлы для сайта.
+https://negativ33.github.io/zakrivayuschiy-teg-f/
