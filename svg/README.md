@@ -1,1 +1,0 @@
-https://negativ33.github.io/zakrivayuschiy-teg-f/
