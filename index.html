@@ -27,6 +27,7 @@
           <picture class="card__picture">
             <img
               class="card__img dog-chill"
+              loading="lazy"
               src="./images/yosyachill.jpg"
               alt="Белый королевский пудель лежит на траве и отдыхает"
             />
@@ -44,9 +45,10 @@
           </p>
         </div>
         <div class="card__buttons">
-          <button type="button" class="card__icon-button">
+          <button type="button" class="card__icon-button" aria-label="лайк">
             <svg
               class="like-icon"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 39 36"
               width="39"
@@ -88,6 +90,7 @@
           <picture class="card__picture">
             <img
               class="card__img filter-opacity"
+              loading="lazy"
               src="./images/mikivpakete.jpg"
               alt="Кошка в пакете на диване и морда собаки"
             />
@@ -107,9 +110,10 @@
           </p>
         </div>
         <div class="card__buttons">
-          <button  type="button" class="card__icon-button">
+          <button type="button" class="card__icon-button" aria-label="Лайк">
             <svg
               class="like-icon"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 39 36"
               width="39"
@@ -140,7 +144,7 @@
               />
             </svg>
           </button>
-          <button  type="button" class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -151,6 +155,7 @@
           <picture class="card__picture">
             <img
               class="card__img filter-blur-drop_shadow-saturate"
+              loading="lazy"
               src="./images/yosyakaket.jpg"
               alt="Белый королевский пудель на зеленой траве какает, а на заднем фоне дом и грузовая машина"
             />
@@ -168,9 +173,10 @@
           </p>
         </div>
         <div class="card__buttons">
-          <button type="button" class="card__icon-button">
+          <button type="button" class="card__icon-button" aria-label="Лайк">
             <svg
               class="like-icon"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 39 36"
               width="39"
@@ -212,6 +218,7 @@
           <picture class="card__picture">
             <img
               class="card__img filter-saturate"
+              loading="lazy"
               src="./images/yosyavhalate.jpg"
               alt="Королевский пудель в халате"
             />
@@ -231,9 +238,10 @@
           </p>
         </div>
         <div class="card__buttons">
-          <button type="button" class="card__icon-button">
+          <button type="button" class="card__icon-button" aria-label="Лайк">
             <svg
               class="like-icon"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 39 36"
               width="39"
@@ -275,6 +283,7 @@
           <picture class="card__picture">
             <img
               class="card__img filter-brightness"
+              loading="lazy"
               src="./images/svetasyosei.jpg"
               alt="Девушка и королевский пудель на зеленой траве, а на заднем фоне кусты и дерево"
             />
@@ -295,9 +304,10 @@
           </p>
         </div>
         <div class="card__buttons">
-          <button type="button" class="card__icon-button">
+          <button type="button" class="card__icon-button" aria-label="Лайк">
             <svg
               class="like-icon"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 39 36"
               width="39"
@@ -339,6 +349,7 @@
           <picture class="card__picture">
             <img
               class="card__img filter-grayscale"
+              loading="lazy"
               src="./images/yosyaspit.jpg"
               alt="Белый королевский пудель спит на диване"
             />
@@ -356,9 +367,10 @@
           </p>
         </div>
         <div class="card__buttons">
-          <button type="button" class="card__icon-button">
+          <button type="button" class="card__icon-button" aria-label="Лайк">
             <svg
               class="like-icon"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 39 36"
               width="39"
@@ -400,6 +412,7 @@
           <picture class="card__picture">
             <img
               class="card__img filter-hue__rotate"
+              loading="lazy"
               src="./images/yosyanakome.jpg"
               alt="Белый королевский пудель стоит на большом снежном коме и поднимает переднюю лапу"
             />
@@ -421,9 +434,10 @@
           </p>
         </div>
         <div class="card__buttons">
-          <button type="button" class="card__icon-button">
+          <button type="button" class="card__icon-button" aria-label="Лайк">
             <svg
               class="like-icon"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 39 36"
               width="39"
@@ -465,6 +479,7 @@
           <picture class="card__picture">
             <img
               class="card__img filter-contrast"
+              loading="lazy"
               src="./images/miki.jpg"
               alt="Кошка лежит в гамаке"
             />
@@ -486,9 +501,10 @@
           </p>
         </div>
         <div class="card__buttons">
-          <button type="button" class="card__icon-button">
+          <button type="button" class="card__icon-button" aria-label="Лайк">
             <svg
               class="like-icon"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 39 36"
               width="39"
@@ -525,7 +541,11 @@
         </div>
       </article>
 
-      <button type="button" onclick="window['save'].showModal()" class="button__save button">
+      <button
+        type="button"
+        onclick="window['save'].showModal()"
+        class="button__save button"
+      >
         <svg class="floppy__image" viewBox="0 0 40 40">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
@@ -538,7 +558,11 @@
           </svg>
           <p class="button__save-text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button type="button" onclick="window['save'].close()" class="button__close button">
+        <button
+          type="button"
+          onclick="window['save'].close()"
+          class="button__close button"
+        >
           <span class="button__text button__close-text">ok</span>
         </button>
       </dialog>
