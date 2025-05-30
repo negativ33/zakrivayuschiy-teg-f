@@ -15,6 +15,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--normal-font-weight);
+  background-color: #fff;
   background-image: repeating-linear-gradient(
       to right,
       #d3d3d3 0px 2px,
@@ -32,7 +33,7 @@
 }
 
 .header {
-  block-size: var(--header-block-size);
+  padding-block: clamp(7.5rem, 7.324rem + 0.75vw, 8rem);
   font-family: var(--accent-font);
   text-transform: uppercase;
   margin-block-start: 100px;
@@ -71,7 +72,7 @@
 .card__title {
   font-size: var(--font-size-normal);
   font-variation-settings: "wght" var(--font-weight-bold);
-  line-height: 19px;
+  line-height: 100%;
   padding-inline-start: 10px;
   padding-inline-end: 24px;
   padding-block: 6px;
@@ -148,12 +149,12 @@
 .card__icon-button:hover .core {
   fill: var(--contour-color);
   transition: fill 0.3s;
-  transition-delay: 0.03s;
 }
 
-.card__icon-button:not(:hover) .core {
+.core {
   fill: transparent;
   transition: fill 0.3s linear;
+  transition-delay: 0.03s;
 }
 
 .card__icon-button:hover .main-body {
@@ -162,7 +163,7 @@
   transition-delay: 0.03s;
 }
 
-.card__icon-button:not(:hover) .main-body {
+.main-body {
   fill: transparent;
   transition: fill 0.3s;
 }
@@ -185,7 +186,7 @@
   transition-delay: 0.06s;
 }
 
-.like-icon:not(.is-liked) .contour {
+.contour {
   fill: var(--contour-color);
   transition: fill 0.1s linear;
 }
@@ -265,7 +266,7 @@
   padding-inline: 20px;
   inline-size: clamp(19.375rem, 18.737rem + 2.723vi, 21.188rem);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 8px;
   align-items: center;
 }
@@ -306,6 +307,7 @@
   inline-size: 39px;
   flex-shrink: 0;
   mix-blend-mode: difference;
+  align-self: center;
 }
 
 .button__save-text {
@@ -313,6 +315,7 @@
   font-size: var(--buttons-font-size);
   text-transform: uppercase;
   line-height: 150%;
+  text-align: center;
 }
 
 .button__close {
@@ -323,43 +326,50 @@
   max-block-size: 38px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.button__close-text {
+  text-transform: uppercase;
 }
 
 @media (width <= 375px) {
-  .button__save {
-    flex-direction: column;
-  }
-
   .floppy__image {
     block-size: 28px;
     inline-size: 28px;
   }
 }
 
-.cat-in-packet {
+@media (width >= 1440px) {
+  .button__save {
+    flex-direction: row;
+  }
+}
+
+.filter-opacity {
   filter: opacity(70%);
 }
 
-.dog-poo {
+.filter-blur-drop_shadow-saturate {
   filter: blur(3px) drop-shadow(6px 6px #000) saturate(200%);
 }
 
-.dog-in-bathrobe {
+.filter-saturate {
   filter: saturate(170%);
 }
 
-.girl-and-dog {
+.filter-brightness {
   filter: brightness(70%);
 }
 
-.dog-sleep {
+.filter-grayscale {
   filter: grayscale(90%);
 }
 
-.dog-on-snowball {
+.filter-hue__rotate {
   filter: hue-rotate(0.8turn);
 }
 
-.cat-in-hammock {
+.filter-contrast {
   filter: contrast(150%);
 }
