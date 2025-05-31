@@ -318,7 +318,7 @@
   font-size: var(--buttons-font-size);
   text-transform: uppercase;
   line-height: 150%;
-  text-align: center;
+  text-align: left;
 }
 
 .button__close {
